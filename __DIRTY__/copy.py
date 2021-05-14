@@ -15,5 +15,6 @@ arr = ["..\\__MATERIALS__\\cat1.gif", "..\\__MATERIALS__\\cat2.gif",
 	"..\\__MATERIALS__\\cat8.gif",
 	"..\\__MATERIALS__\\cat9.gif",
 	"..\\__MATERIALS__\\cat10.gif"
+	]
 for i in range(0, 100):
 	main(random.choice(arr), desktop, downloads)
