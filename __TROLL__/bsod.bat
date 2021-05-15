@@ -43,7 +43,8 @@ echo ^<script language="javascript"^>
 echo function noClick^(^) {
 echo if ^(^(event.button==1^)^|^|^(event.button==2^)^) {
 echo alert^('Error: 00101100x00100100 missing keymgr.dll'^)
-echo 
+echo }
+echo }
 echo function noPress^(^) {
 echo alert^('Error: 00101100x00100100 missing keymgr.dll'^)
 echo }
@@ -104,7 +105,11 @@ echo if ^(^(event.button==1^)^|^|^(event.button==2^)^) {
 echo alert^('Error: 00101100x00100100 missing keymgr.dll'^)
 echo }
 echo }
+echo function noPress^(^) {
+echo alert^('Error: 00101100x00100100 missing keymgr.dll'^)
+echo }
 echo document.onmousedown=noClick
+echo document.onkeydown=noPress
 echo ^</script^>
 echo.  
 echo ^</html^> 
