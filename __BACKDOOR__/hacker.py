@@ -14,6 +14,23 @@ while True:
         s.close()
         sys.exit(1)
     if data == b'200':
-        s.close()
-        break
+	    break
 print("OK")
+while True:
+	type = input("Is it a query?(y/n): ") == "y"
+	if type:
+		query = "query|"+input("Enter the command: ")
+		s.send(query.encode())
+		data = None
+		while True:
+			data = conn.recv(1024)
+			if not data:
+			    continue
+			break
+		print(data)
+	else:
+		query = "command|"+input("Enter the command: ")
+		s.send(query.encode())
+		if query.split("|")[1] == "exit":
+			s.close()
+			break
