@@ -1,4 +1,3 @@
-# кошкодевочки вирус
-Вирус создаёт много окон с кошкодевочками и копирует их на раб стол после чего выдаёт бсод
-
-Спрятан в Пикаса
+# catgirl virus
+Just a joke, don't take it serious. It is an experiment.
+Outdated, maybe will be remade.
